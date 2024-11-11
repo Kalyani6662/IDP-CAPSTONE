@@ -1,0 +1,252 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="CSS_files/cart.css">
+        <script src="JS_files/cart.js"></script>
+    </head>
+    <body>
+                     <!--header part start-->                
+     <div class="container-fluid text-white" id="change-color">
+        <div class="row" id="top-containt">
+          <div class="col-4 text-center">
+            <a href="login-ecommerce.html"><img src="data:image/jpeg;base64,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" height="130px" class="color logo-1 logo-sift"></a>
+            <div class="small-devices-logo"><a href="login-ecommerce.html"><img src="Images/pinterest_icon.png" height="70px" class=" color logo-2 mt-1 ml-2"></a></div>
+          </div>
+          <div class="col-8 pt-4 mt-1 text-center">
+            <span class="dropdown dropdown-toggle profile" data-toggle="dropdown" style="color:black" >
+              <a href="#/"><img src="Images/profile-icon.png" class="profile-icon color"></a>
+            </span>
+            <ul class="dropdown-menu mt-4 text-center" style="margin-left:-6%;border-radius:10px;">
+              <li class="pre-profile-1 pt-2 pb-2"><a href="#/" class="color" style="font-weight:600">Help Center </a></li>
+              <li class="pre-profile-1 pt-2 pb-2"><a href="#/" class="color" style="font-weight:600">Order History</a></li>
+              <li class="pre-profile-1 pt-2 pb-2"><a href="#/" class="color" style="font-weight:600">Change Password</a></li>
+              <li class="pre-profile-1 pt-2 pb-2"><a href="#/" class="color" style="font-weight:600">Update Profile</a></li>
+              <li class="pre-profile-1 pt-2 pb-2"><a href="ecommerce.html" class="color" style="font-weight:600">Log Out</a></li>
+            </ul>
+            <span class="menu-1"><a href="login-ecommerce.html" class="color">home</a></span>
+            <span class="menu"><a href="Logged_in_product_page.html" class="color">products</a></span>
+            <span class="menu"><a href="logged_in_about_us.html" class="color">about</a></span>
+            <span class="menu"><a href="contact-form.html" class="color">contact</a></span>
+            <span class="menu-bar text-right"><a href="#/" class="color">&#9776;</a></span>
+            <span class="menu-bar-1 text-right"><a href="#/" class="color">&#9776;</a></span>
+            <span class="menu-bar-2 text-right"><a href="#/" class="color">&#9776;</a></span>
+          </div>
+        </div>
+        <div class="container-fluid side-bar px-0">
+          <div class="col-12 text-right bg-danger"> 
+            <span class="close"><a href="#/" class="color">&times;</a></span>
+          </div>
+            <ul class="pt-5 pre-side-bar">
+              <li class="pt-4" style="margin-left:-5%;"><a href="login-ecommerce.html" class="color">home</a></li>
+              <li class="pt-3"style="margin-left:-5%"><a href="Logged_in_product_page.html" class="color">products</a></li>
+              <li class="pt-3"style="margin-left:-5%"><a href="logged_in_about_us.html" class="color">about</a></li>
+              <li class="pt-3"style="margin-left:-5%"><a href="contact-form.html" class="color">contact</a></li>
+              <li class="pt-3"style="margin-left:-5%"><a href="#/" class="color">Update profile</a></li>
+              <li class="pt-3"style="margin-left:-5%"><a href="ecommerce.html" class="color">Log Out</a><span><a href="#" class="color"><img src="Images/log-in..png" class="log-in"></a></span></li>
+            </ul>
+        </div>
+    </div>
+    <!--header part end-->
+     <div class="container mt-5">
+        <div class="row pt-5">
+          <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 mt-3">
+                <div class="card">
+                  <div class="card-header">
+                    <div class="row pt-3 pb-3">
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+                        <span style="font-size:20px;font-weight:700;color:grey;color:black">My Cart(3)</span>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12  text-right">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;Deliver to &nbsp;<input type="text" placeholder="user name and address">
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="card-body">
+                      <div class="row pb-3 ">
+                        <div class="col-xl-4 col-lg-2 col-md-3 col-sm-3 col-12 pt-5 text-center">
+                          <img src="Images/men.jpg" height="200px">
+                        <div class="text-left">
+                            <select name="Qunatity" class="custom-select mt-2 first">
+                              <option selected>1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-10 col-md-8 col-sm-8 col-12 pt-5">
+                          <p>Item Name:&nbsp;Pink Saree</p>
+                          <p>Seller:&nbsp;Laxmipati</p>
+                          <p>Price:&nbsp;&#8377;390</p>
+                          <p><a href="#/" style="font-weight:700">REMOVE</a></p>
+                        </div>
+                      </div>
+                      <div class="row pb-3">
+                        <div class="col-xl-4  col-lg-2 col-md-3 col-sm-4 col-12 pt-5 text-center">
+                          <img src="Images/girl.jpg" height="200px">
+                          <div class="text-left">
+                          <select name="Qunatity" class="custom-select mt-2 second">
+                            <option selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                        </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-10 col-md-8 col-sm-8 col-12 pt-5 pt-5">
+                          <p>Item Name:&nbsp;Tradesional Dress</p>
+                          <p>Size:&nbsp;XXL</p>
+                          <p>Seller:&nbsp;Fabindia</p>
+                          <p>Price:&nbsp;&#8377;490</p>
+                          <p><a href="#/"  style="font-weight:700">REMOVE</a></p>
+                        </div>
+                      </div>
+                      <div class="row pb-3">
+                        <div class="col-xl-4 col-lg-2 col-md-3 col-sm-3 col-12 pt-5 pl-5 text-center">
+                          <img src="Images/background-image-1.jpg" height="200px">
+                          <select name="Qunatity" class="custom-select mt-2 third text-center">
+                            <option selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                        
+                        </div>
+                        <div class="col-xl-8  col-lg-9 col-md-8 col-sm-8 col-8 pt-5 pt-5 pt-5">
+                          <p>Item Name:&nbsp;Black Design Saree</p>
+                          <p>Seller:&nbsp;Fabindia</p>
+                          <p>Price:&nbsp;&#8377;580</p>
+                          <p><a href="#/"  style="font-weight:700">REMOVE</a></p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col pr-5 text-right">
+                          <p><button style="text-transform: uppercase;padding:2% 5%;background-color: tomato;color:white;border-color:transparent" data-toggle="collapse" data-target="#collapseTwo,#payment-option"><a href="payment.html" style="color: white;">Place Order</a></button></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 mt-3 pt-4">
+            <div class="container">
+              <div class="card">
+                <div class="card-header">PRICE DETAILS</div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col text-left">
+                      Price(3) :
+                    </div>
+                    <div class="col text-right">
+                      &#8377;1,460
+                    </div>
+                  </div>
+                    <div class="row pt-3">
+                      <div class="col-7 text-left ">
+                        Delivery Charges :
+                      </div>
+                      <div class="col text-right">
+                        Free
+                      </div>
+                    </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col text-left">
+                      Total Amount :
+                    </div>
+                    <div class="col text-right">
+                      &#8377;1,460
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+          </div>
+      </div>
+
+  </div>
+  <!--footer-->
+  <div class="container-fluid bg-dark text-white mt-5">
+      <div class="container">
+      <div class="row ">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 footer pt-5">
+          <p style="font-size:20px;text-transform: uppercase;font-weight: 800;" data-aos="slide-right">company name</p>
+          <p data-aos="slide-right">Here you can use rows and<br>
+          to organize your footer content.<br>
+          Lorem ipsum dolor sit amet,<br> 
+          consectetur adipisicing elit.<br></p>
+        </div>
+        <div class="col-xl-3 pt-5 hide-girl">
+          <span style="font-size:20px;text-transform: uppercase;font-weight: 800;" data-aos="zoom-in-left">products</span><br>
+          <p style="margin-top:3%" data-aos="slide-up">M D Bootstrap</p>
+          <p style="margin-top:-3%" data-aos="slide-up">M D Bootstrap</p>
+          <p style="margin-top:-3%" data-aos="slide-up">M D Bootstrap</p>
+          <p style="margin-top:-3%;" data-aos="slide-up">M D Bootstrap</p>
+       </div>
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 footer  pt-5">
+          <span style="font-size:20px;text-transform: uppercase;font-weight: 800;" class="text-center" data-aos="zoom-in-left">useful link</span><br>
+          <p style="margin-top:3%;margin-left:1%;"data-aos="fade-up">your account</p>
+          <p style="margin-top:-3%;margin-left:1%;"data-aos="fade-up">your account</p>
+          <p style="margin-top:-3%;margin-left:1%;"data-aos="fade-up">your account</p>
+          <p style="margin-top:-3%;margin-left:1%;"data-aos="fade-up">your account</p>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12 col-12 footer pt-5 pb-3">
+          <p style="font-size:20px;text-transform: uppercase;font-weight: 800;" data-aos="slide-left">contact</p>
+          <p data-aos="fade-up"><i class="fa fa-home" aria-hidden="true" style="font-size:20px;"></i>&nbsp; New York, 10012,</p>
+          <p data-aos="fade-up"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; info@gmail.com</p>
+          <p data-aos="fade-up"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp; + 01 234 567 88</p>
+          <p data-aos="fade-up"><i class="fa fa-print" aria-hidden="true"></i>&nbsp; + 01 234 567 89</p>
+        </div>
+      </div>
+    </div>
+    <hr style="color:white;width:100%;border:1px solid">
+    <div class="container mt-4 pb-4">
+      <div class="row">
+        <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6 ">
+          <p>© 2020 Copyright:<span style="font-weight:600">MDBootstrap</span></p>
+        </div>
+        <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6 icon-head">
+          <span class="icons-2"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+          <span class="icons-3"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+          <span class="icons-1"><i class="fa fa-google-plus" aria-hidden="true"></i></span>
+          <span class="icons"><i class="fa fa-instagram" aria-hidden="true"></i></span>
+        </div>
+      </div>
+    </div>
+    </div>
+      <!--footer-->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
+    <script>
+        AOS.init({
+          once:true,
+          duration:1000,
+        });
+      </script>
+    </body>
+</html>

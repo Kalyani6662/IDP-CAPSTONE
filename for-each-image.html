@@ -1,0 +1,716 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="CSS_files/for-each-image.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+        <link rel="stylesheet" type="text/css" href="Plugins/slick-master/slick/slick-theme1.css"/>
+        <script type="text/javascript" src="Plugins/slick-master/slick/slick.min.js"></script>
+        <script src="JS_files/for-each-image.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="Plugins\jQuery-Plugin-For-Image-Hover-Zoom-WM-Zoom\wm-zoom\jquery.wm-zoom-1.0.min.css">
+        <style>
+          a:hover,a{color:black}
+        </style>
+    </head>
+    <body>
+            <!--pop up-->
+    <div class="container-fluid mt-5 pop-container" style="position:absolute;z-index:3;background-color: transparent;">
+        <div class="container bg-light mt-2 mb-2 pt-2" style="border-radius:20px;">
+            <div class="row pt-5">
+                <div class="col-6 text-left pt-2 table-header">
+                    <span style="font-size:25px;">Size Chart</span>
+                </div>
+                <div class="col-6 text-right pr-5">
+                    <span style="font-size:35px;" class="close-pop"><a href="#/" style="color:black">&times;</a></span>                                                                
+                </div>
+            </div>
+            <div class="row pt-3 table-header" style="font-size:20px;">
+                <div class="col-12">
+                    Veirdo Men's Shirts size chart
+                </div>
+                <div class="col-12">
+                    shirts
+                </div>
+            </div>
+            <div class="row pt-3 pb-5 table">
+                <div class="col">
+                    <table class="table table-bordered table-hover table-striped hide-for-tablate">
+                        <thead>
+                          <tr>
+                            <th>Label size</th>
+                            <th>India</th>
+                            <th>Chest(in inches)</th>
+                            <th>Waist(in inches)</th>
+                            <th>Length(in inches)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>S</td>
+                            <td>Small</td>
+                            <td>38</td>
+                            <td>37.5</td>
+                            <td>27</td>
+                          </tr>
+                          <tr>
+                            <td>M</td>
+                            <td>Medium</td>
+                            <td>40</td>
+                            <td>39.5</td>
+                            <td>27</td>
+                          </tr>
+                          <tr>
+                            <td>L</td>
+                            <td>Large</td>
+                            <td>42</td>
+                            <td>41.5</td>
+                            <td>29</td>
+                          </tr>
+                          <tr>
+                            <td>XL</td>
+                            <td>X-Large</td>
+                            <td>44</td>
+                            <td>43.5</td>
+                            <td>30</td>
+                          </tr>
+                          <tr>
+                            <td>XXL</td>
+                            <td>XX-Large</td>
+                            <td>46</td>
+                            <td>45.5</td>
+                            <td>30.5</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table class="table table-hover table-striped show-for-tablate">
+                        <thead>
+                          <tr>
+                            <th>Label size</th>
+                            <th>S</th>
+                            <th>M</th>
+                            <th>L</th>
+                            <th>XL</th>
+                            <th>XXL</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>India</td>
+                            <td>Small</td>
+                            <td>Medium</td>
+                            <td>Large</td>
+                            <td>X-Large</td>
+                            <td>XXL-large</td>
+                          </tr>
+                          <tr>
+                            <td>Chest(in inches)</td>
+                            <td>38</td>
+                            <td>40</td>
+                            <td>42</td>
+                            <td>44</td>
+                            <td>46</td>
+                          </tr>
+                          <tr>
+                            <td>Waist(in inches)</td>
+                            <td>37.5</td>
+                            <td>39.5</td>
+                            <td>41.5</td>
+                            <td>43.5</td>
+                            <td>45.5</td>
+                          </tr>
+                          <tr>
+                            <td>Length(in inches)</td>
+                            <td>27</td>
+                            <td>27</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>30.5</td>
+                          </tr>                                                     
+                        </tbody>
+                      </table>
+                      <table class="table table-hover table-striped show-for-mobile">
+                        <thead>
+                          <tr>
+                            <th>Label size</th>
+                            <th>Chest(in inches)</th>
+                            <th>Waist(in inches)</th>
+                            <th>Length(in inches)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>s</td>
+                            <td>38</td>
+                            <td>37.5</td>
+                            <td>27</td>
+                          </tr>
+                          <tr>
+                            <td>M</td>
+                            <td>40</td>
+                            <td>39.5</td>
+                            <td>27</td>
+                          </tr>
+                          <tr>
+                            <td>L</td>
+                            <td>42</td>
+                            <td>41.5</td>
+                            <td>29</td>
+                          </tr>   
+                          <tr>
+                            <td>XL</td>
+                            <td>44</td>
+                            <td>43.5</td>
+                            <td>30</td>
+                          </tr>
+                          <tr>
+                            <td>XXL</td>
+                            <td>46</td>
+                            <td>45.5</td>
+                            <td>30.5</td> 
+                          </tr>                                                  
+                        </tbody>
+                      </table>
+                      <table class="table table-hover table-striped show-for-extra-small-devices">
+                        <thead>
+                          <tr>
+                            <th>Label size</th>
+                            <th>Chest(in inches)</th>
+                            <th>Waist(in inches)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>s</td>
+                            <td>38</td>
+                            <td>37.5</td>
+                          </tr>
+                          <tr>
+                            <td>M</td>
+                            <td>40</td>
+                            <td>39.5</td>
+                          </tr>
+                          <tr>
+                            <td>L</td>
+                            <td>42</td>
+                            <td>41.5</td>
+                          </tr>   
+                          <tr>
+                            <td>XL</td>
+                            <td>44</td>
+                            <td>43.5</td>
+                          </tr>
+                          <tr>
+                            <td>XXL</td>
+                            <td>46</td>
+                            <td>45.5</td>
+                          </tr>                                                  
+                        </tbody>
+                      </table>
+                      <table class="table table-hover table-striped show-for-extra-small-devices">
+                        <thead>
+                          <tr>
+                            <th>Label size</th>
+                            <th>Length(in inches)</th>
+                          </tr>
+                          <tr>
+                            <td>s</td>
+                            <td>27</td>
+                          </tr>
+                          <tr>
+                          <td>M</td>
+                          <td>27</td>
+                          </tr>
+                          <tr>
+                          <td>L</td>
+                          <td>29</td>
+                          </tr>
+                          <tr>
+                          <td>XL</td>
+                          <td>30</td>
+                          </tr> 
+                          <tr>
+                          <td>XXL</td>
+                          <td>30.5</td>
+                          </tr>  
+                        </thead>
+                      </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 table-header">
+                    <p class="pt-3">Measuring T Shirt Size</p>
+                    <span>Not sure about your t shirt size? Follow these simple steps to figure it out:</span><br>
+                    <span style="font-weight: 600;">Shoulder</span> - Measure the shoulder at the back, from edge to edge with arms relaxed on both sides<br>
+                    <span style="font-weight:600;">Chest</span> - Measure around the body under the arms at the fullest part of the chest with your arms relaxed at both sides.<br>
+                    <span style="font-weight:600;">Sleeve</span> - Measure from the shoulder seam through the outer arm to the cuff/hem<br>
+                    <span style="font-weight:600;">Neck</span> - Measured horizontally across the neck Length - Measure from the highest point of the shoulder seam to the bottom hem of the garment's<br>
+                </div>
+                <div class="col-12 text-center pt-5 pb-5">
+                    <img src="Images/shirt-detail.jpg" height="300px" width="50%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--pop up-->
+             <!--header part start-->                
+     <div class="container-fluid text-white" id="change-color">
+        <div class="row" id="top-containt">
+          <div class="col-4 text-center">
+            <a href="ecommerce.html"><img src="data:image/jpeg;base64,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" height="130px" class="color logo-1 logo-sift"></a>
+            <a href="ecommerce.html"><img src="Images/pinterest_icon.png" height="70px" class=" color logo-2 mt-1 ml-2"></a>
+          </div>
+          <div class="col-8 pt-4 mt-1 text-center">
+            <span class="dropdown dropdown-toggle profile" data-toggle="dropdown" style="color:black" >
+              <a href="#/"><img src="Images/profile-icon.png" class="profile-icon color"></a>
+            </span>
+            <ul class="dropdown-menu mt-4 text-center" style="margin-left:-6%;border-radius:10px;">
+              <li class="pre-profile-1 pt-2 pb-2"><a href="#/" class="color" style="font-weight:600">Help Center </a></li>
+              <li class="pre-profile-1 pt-2 pb-2"><a href="#/" class="color" style="font-weight:600">Order History</a></li>
+              <li class="pre-profile-1 pt-2 pb-2"><a href="#/" class="color" style="font-weight:600">Change Password</a></li>
+              <li class="pre-profile-1 pt-2 pb-2"><a href="#/" class="color" style="font-weight:600">Update Profile</a></li>
+              <li class="pre-profile-1 pt-2 pb-2"><a href="login-form.html" class="color" style="font-weight:600">Log In</a></li>
+            </ul>
+            <span class="menu-1"><a href="ecommerce.html" class="color">home</a></span>
+            <span class="menu"><a href="ecommerce-price-men.html" class="color">products</a></span>
+            <span class="menu"><a href="about-us.html" class="color">about</a></span>
+            <span class="menu"><a href="contact-form.html" class="color">contact</a></span>
+            <span class="menu-bar text-right"><a href="#/" class="color">&#9776;</a></span>
+            <span class="menu-bar-1 text-right"><a href="#/" class="color">&#9776;</a></span>
+            <span class="menu-bar-2 text-right"><a href="#/" class="color">&#9776;</a></span>
+          </div>
+        </div>
+        <div class="container-fluid side-bar px-0">
+          <div class="col-12 text-right bg-danger"> 
+            <span class="close"><a href="#/" class="color">&times;</a></span>
+          </div>
+            <ul class="pt-5 pre-side-bar">
+              <li class="pt-4" style="margin-left:-5%;"><a href="ecomarce.html" class="color">home</a></li>
+              <li class="pt-3"style="margin-left:-5%"><a href="ecomarce-price-men.html" class="color">products</a></li>
+              <li class="pt-3"style="margin-left:-5%"><a href="about-us.html" class="color">about</a></li>
+              <li class="pt-3"style="margin-left:-5%"><a href="contact-form.html" class="color">contact</a></li>
+              <li class="pt-3"style="margin-left:-5%"><a href="#/" class="color">Update profile</a></li>
+              <li class="pt-3"style="margin-left:-5%"><a href="login-form.html" class="color">Log In</a><span><a href="#" class="color"><img src="Images/log-in..png" class="log-in"></a></span></li>
+            </ul>
+        </div>
+    </div>
+    <!--header part end-->
+    <!--middle part start-->
+    <div class="container mt-5 pt-4 hide-for-tablate">
+        <div class="row pt-5">
+            <div class="col-1">
+                <div class="row pt-3 pb-2">
+                    <div class="col-xl-12 text-center">
+                        <a href="#/"><img src="Images/for-each-image-1.jpg" height="50px" width="100%" class="zooming"></a>
+                    </div>
+                    <div class="col-xl-12 mt-3">
+                       <a href="#/"><img src="Images/for-each-image-2.jpg" height="50px" width="100%" class="zooming-1"></a> 
+                    </div>
+                    <div class="col-xl-12 mt-3 front-show">
+                      <a href="#/"><img src="Images/for-each-image-3.jpg" height="55px" width="75%" class="zooming-2"></a>
+                      <a href="#/"><div style="font-size:25px;z-index:1;color:black;position: absolute;padding-left:20%;" class="pt-1 front-show">+3</div></a>  
+                    </div>
+                    <div class="col-xl-12 mt-3 front-hide">
+                        <a href="#/"><img src="Images/for-each-image-3.jpg" height="50px" width="100%" class="zooming-5"></a> 
+                    </div>
+                    <div class="col-xl-12 mt-3 front-hide">
+                     <a href="#/"><img src="Images/for-each-image-5.jpg" height="50px" width="100%" class="zooming-3"></a>  
+                    </div>
+                    <div class="col-xl-12 mt-3 front-hide">
+                      <a href="#/"><img src="Images/for-each-image-6.jpg" height="50px" width="100%" class="zooming-4"></a>  
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 text-center zooming-open-head wm-zoom-container my-zoom-1">
+              <div class="wm-zoom-box">
+                <img src="Images/for-each-image-1.jpg" height="400px" width="405px" class="wm-zoom-default-img" alt="alternative text" data-hight-src="for-each-image-1.jpg">
+              </div>
+            </div>
+<!--hidden--> <div class="col-5 text-center zooming-open-1 wm-zoom-container my-zoom-1">
+              <div class="wm-zoom-box">
+                <img src="Images/for-each-image-2.jpg" height="400px" width="405px" class="wm-zoom-default-img" alt="alternative text" data-hight-src="for-each-image-2.jpg">
+              </div>
+            </div>
+<!--hidden--> <div class="col-5 text-center zooming-open-2">
+                <img src="Images/for-each-image-3.jpg" height="400px" width="95%">
+              </div>
+<!--hidden--> <div class="col-5 text-center zooming-open-3">
+                <img src="Images/for-each-image-5.jpg" height="400px" width="95%">
+            </div>
+<!--hidden--> <div class="col-5 text-center zooming-open-4">
+                <img src="Images/for-each-image-6.jpg" height="400px" width="95%">
+            </div>
+            <div class="col-5">
+                <div class="row">
+                    <div class="col-12 pt-3">
+                        <p style="font-size:25px;font-weight:600">Symbol Men's Solid Regular fit Half Sleeve Polo</p>
+                    </div>
+                    <div class="col-12 pl-5">
+                        <p style="font-weight:600;font-size:20px;"> Price:<span style="color:red">&#8377;200.00-&#8377;300.00</span></p>
+                    </div>
+                    <div class="col-12 pl-5">
+                        <p style="font-weight:600;font-size:20px;">size: <span style="border:1px solid;padding:1% 3%" class="ml-3">M</span> <span style="border:1px solid;padding:1% 4%" class="ml-2">L</span> <span style="border:1px solid;padding:1% 3%" class="ml-2">XL</span> <br class="break"><a href="#/" style="color:black" class="ml-3 open-pop-container">size chart <img src="Images/size-icon.png" height="20px"></a></p>
+                    </div>
+                    <div class="col-12">
+                        <ul>
+                            <li>Care Instructions: hand wash</li>
+                            <li>Fit Type: regular fit</li>
+                            <li>Color:Blue Radiance</li>
+                            <li>60% Polyester and 40% Cotton</li>
+                            <li>Regular fit</li>
+                            <li>Half sleeve</li>
+                            <li>Polo with classic collar</li>
+                            <li>Hand wash</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div class="row pt-2">
+            <div class="col-6">
+              <span style="visibility: hidden;;">hello user</span>
+            </div>
+            <div class="col-6 pl-5 text-white">
+                <a href="login-form.html" style="color:white"><span style="width:30%;border:1px solid;padding:2% 5%;text-transform: uppercase;font-size:15px;font-weight:600;background-color:rgb(255, 174, 0);border-radius:10px;"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="ml-2">add to card</span></span></a>
+                <a href="login-form.html" style="color:white"><span style="width:30%;border:1px solid;padding:2% 5%;text-transform: uppercase;font-size:15px;font-weight:600;background-color:orangered;border-radius:10px;" class="ml-3"><i class="fa fa-bolt" aria-hidden="true"></i><span class="ml-2"> buy now</span></span></a>
+            </div>
+        </div>
+        <div class="rows pb-5">
+          <div class="col">
+            <span style="visibility:hidden;">hello user</span>
+          </div>
+        </div>
+    </div>
+    <div class="container show-for-small-devices mt-5 pt-1">
+      <div class="row pt-5 mt-5">
+        <div class="col-2 col-xs-3">
+          <div class="row pt-3 pb-2">
+            <div class="col-xl-12 text-center">
+                <a href="#/"><img src="Images/for-each-image-1.jpg" class="zooming"></a>
+            </div>
+            <div class="col-xl-12 mt-3">
+               <a href="#/"><img src="Images/for-each-image-2.jpg" class="zooming-1"></a> 
+            </div>
+            <div class="col-xl-12 mt-3 front-show">
+              <a href="#/"><img src="Images/for-each-image-3.jpg" height="55px" width="75%" class="zooming-2"></a>
+              <a href="#/"><div class="pt-2 front-show block-img-for-tablate">+3</div></a>  
+            </div>
+            <div class="col-xl-12 mt-3 front-hide">
+                <a href="#/"><img src="Images/for-each-image-3.jpg" class="zooming-5"></a> 
+            </div>
+            <div class="col-xl-12 mt-3 front-hide">
+             <a href="#/"><img src="Images/for-each-image-5.jpg" class="zooming-3"></a>  
+            </div>
+            <div class="col-xl-12 mt-3 front-hide">
+              <a href="#/"><img src="Images/for-each-image-6.jpg" class="zooming-4"></a>  
+            </div>
+        </div>
+        </div>
+        <div class="col-10 col-xs-9 text-center zooming-open-head ">
+          <img src="Images/for-each-image-1.jpg" height="400px" width="95%">
+        </div>
+<!--hidden--> <div class="col-10 text-center zooming-open-1">
+          <img src="Images/for-each-image-2.jpg" height="400px" width="95%">
+              </div>
+<!--hidden-->   <div class="col-10 text-center zooming-open-2">
+          <img src="Images/for-each-image-3.jpg" height="400px" width="95%">
+                </div>
+<!--hidden--> <div class="col-10 text-center zooming-open-3">
+          <img src="Images/for-each-image-5.jpg" height="400px" width="95%">
+              </div>
+<!--hidden--> <div class="col-10 text-center zooming-open-4">
+          <img src="Images/for-each-image-6.jpg" height="400px" width="95%">
+              </div>
+      </div>
+      <div class="row mt-5 pt-5">
+        <div class="col-12 pt-3">
+          <p style="font-size:25px;font-weight:600">Symbol Men's Solid Regular fit Half Sleeve Polo</p>
+      </div>
+      <div class="col-12 pl-5">
+          <p style="font-weight:600;font-size:20px;"> Price:<span style="color:red">&#8377;200.00-&#8377;300.00</span></p>
+      </div>
+      <div class="col-12 pl-5">
+          <p style="font-weight:600;font-size:20px;">size: <span style="border:1px solid;padding:1% 3%" class="ml-3">M</span> <span style="border:1px solid;padding:1% 4%" class="ml-2">L</span> <span style="border:1px solid;padding:1% 3%" class="ml-2">XL</span> <br class="break"><a href="#/" style="color:black" class="ml-3 open-pop-container">size chart <img src="size-icon.png" height="20px"></a></p>
+      </div>
+      <div class="col-12">
+          <ul>
+              <li>Care Instructions: hand wash</li>
+              <li>Fit Type: regular fit</li>
+              <li>Color:Blue Radiance</li>
+              <li>60% Polyester and 40% Cotton</li>
+              <li>Regular fit</li>
+              <li>Half sleeve</li>
+              <li>Polo with classic collar</li>
+              <li>Hand wash</li>
+          </ul>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a href="#/" style="color:white"><span style="width:30%;border:1px solid;padding:2% 5%;text-transform: uppercase;font-size:15px;font-weight:600;background-color:rgb(255, 174, 0);border-radius:10px;"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="ml-2">add to card</span></span></a><br class="break-1"><br class="break-1">
+          <a href="#/" style="color:white"><span style="width:30%;border:1px solid;padding:2% 5%;text-transform: uppercase;font-size:15px;font-weight:600;background-color:orangered;border-radius:10px;" class="ml-3"><i class="fa fa-bolt" aria-hidden="true"></i><span class="ml-2"> buy now</span></span></a>
+        </div>
+      </div>
+      <div class="container-fluid mt-5">
+        <span style="visibility: hidden;">hi user</span>
+      </div>
+    </div>
+    <!--middle part end-->
+
+    <div class="container mb-5"> 
+      <div class="row">
+        <div class="col-sm-12 text-center pb-4 pt-4">
+         <span style="text-transform: uppercase;font-weight: 700;font-size:30px;" data-aos="zoom-in">similar</span>
+        </div>
+      </div>
+      <div class="carousel slide pt-1" data-ride="carousel">
+        <div class="carousel-inner">
+                                              <!--first slider-->
+          <div class="carousel-item text-center">
+            <div class="row">
+              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="container" height="250px" width="250px" style="overflow:hidden">
+                  <a href="for-each-image.html#/"><img src="Images/girl.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;"><br></a>
+                  <a href="for-each-image.html#/"><span class="image-lable" data-aos="fade-up">afordable & tradesional dress<br>$101.00</span></a>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-6 hide-kids-dress text-center">
+                <div class="container pl-0" height="250px" width="250px" style="overflow:hidden">
+                  <a href="for-each-image.html#/"><img src="Images/men.jpg" class="img-men" style="border-radius:20px;" data-aos="fade-up"><br></a>
+                  <a href="for-each-image.html#/"><span class="image-lable" data-aos="fade-up">plain pink cotton saree<br>$400.00</span></a>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 hide-lady-1">
+                <div class="container pl-0" height="250px" width="250px" style="overflow:hidden">
+                  <a href="for-each-image.html#/"><img src="Images/girl.jpg" class="img-men" style="border-radius:20px;" data-aos="fade-up"></a>
+                  <a href="for-each-image.html#/"><span class="image-lable" data-aos="fade-up">plain pink cotton saree<br>$101.00</span></a>
+                </div>
+              </div>
+              <div class="col-xl-3 hide-lady">
+                <div class="container pl-0" height="250px" width="250px" style="overflow:hidden">
+                  <a href="for-each-image.html#/"><img src="Images/men.jpg" class="img-men" style="border-radius:20px;" data-aos="fade-up"></a>
+                  <a href="for-each-image.html#/"><span class="image-lable" data-aos="fade-up">plain pink cotton saree<br>$400.00</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+                                             <!--second-slider-->
+          <div class="carousel-item text-center">
+            <div class="row">
+              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="container" height="250px" width="250px" style="overflow:hidden">
+                  <a href="for-each-image.html#/"><img src="Images/men-1.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;"><br></a>
+                  <a href="for-each-image.html#/"><span class="image-lable" data-aos="fade-up">accessories & tradesional dress<br>$117.00</span></a>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-6 hide-kids-dress text-center">
+                <div class="container pl-0" height="250px" width="250px" style="overflow:hidden">
+                  <a href="for-each-image.html#/"><img src="Images/blazers.jpg" class="img-men" style="border-radius:20px;" data-aos="fade-up"><br></a>
+                  <a href="for-each-image.html#/"><span class="image-lable" data-aos="fade-up">men's black sweatshirt<br>$60.00</span></a>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 hide-lady-1">
+                <div class="container pl-0" height="250px" width="250px" style="overflow:hidden">
+                  <a href="for-each-image.html#/"><img src="Images/men-1.jpg" class="img-men" style="border-radius:20px;" data-aos="fade-up"></a>
+                  <a href="for-each-image.html#/"><span class="image-lable" data-aos="fade-up">accessories & tradesional dress<br>$117.00</span></a>
+                </div>
+              </div>
+              <div class="col-xl-3 hide-lady">
+                <div class="container pl-0" height="250px" width="250px" style="overflow:hidden">
+                  <a href="for-each-image.html#/"><img src="Images/blazers.jpg" class="img-men" style="border-radius:20px;" data-aos="fade-up"></a>
+                  <a href="for-each-image.html#/"><span class="image-lable" data-aos="fade-up">men's black sweatshirt<br>$60.00</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+                                      <!--third slider-->
+          <div class="carousel-item active text-center">
+            <div class="row">
+              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="container" height="250px" width="250px" style="overflow:hidden">
+                  <a href="for-each-image.html#/"><img src="Images/kids.jpg" class="img-men" data-aos="fade-up" style="border-radius:20px;"><br></a>
+                  <a href="for-each-image.html#/"><span class="image-lable" data-aos="fade-up">toddler children's dress<br>$203.00</span></a>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-6 hide-kids-dress text-center">
+                <div class="container pl-0" height="250px" width="250px" style="overflow:hidden">
+                  <a href="for-each-image.html#/"><img src="Images/boys-kids.jpg" class="img-men" style="border-radius:20px;" data-aos="fade-up"><br></a>
+                  <a href="for-each-image.html#/"><span class="image-lable" data-aos="fade-up">boys flower print shirt<br>$320.00</span></a>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 hide-lady-1">
+                <div class="container pl-0" height="250px" width="250px" style="overflow:hidden">
+                  <a href="for-each-image.html#/"><img src="Images/girl (2).jpg" class="img-men" style="border-radius:20px;" data-aos="fade-up"></a>
+                  <a href="for-each-image.html#/"><span class="image-lable" data-aos="fade-up">girls flower print skirt<br>$400.00</span></a>
+                </div>
+              </div>
+              <div class="col-xl-3 hide-lady">
+                <div class="container pl-0" height="250px" width="250px" style="overflow:hidden">
+                  <a href="for-each-image.html#/"><img src="Images/boys-kids-1.jpg" class="img-men" style="border-radius:20px;" data-aos="fade-up"></a>
+                  <a href="for-each-image.html#/"><span class="image-lable" data-aos="fade-up">formal black toxedo dress suits<br>$117.00</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+              <!--recommend-->
+              <div class="container" style="height:80vh">
+                <div class="row">
+                  <div class="col-sm-12 text-center pt-5">
+                   <a href="for-each-image.html"><span style="text-transform: uppercase;font-weight: 700;font-size:30px;">recommend</span></a>
+                  </div>
+                </div>
+                <div class="row single-slider pt-5">
+                  <div class="col text-center">
+                    <a href="for-each-image.html"><span style="display:flex;justify-content: center;"><img src="Images/boys-dress-1.jpeg" height="250px" style="background-color:black"></span></a>
+                     <a href="for-each-image.html"><span class="image-lable">tradesional dress<br>&#8377;180.00</span></a> 
+                  </div>
+                  <div class="col  text-center">
+                    <a href="for-each-image.html"><span style="display:flex;justify-content: center;"><img src="Images/mens-dress-2.jpg" height="250px"></span></a>
+                     <a href="for-each-image.html"><span class="image-lable">tradesional dress<br>&#8377;180.00</span></a> 
+                  </div>
+                  <div class="col  text-center">
+                    <a href="for-each-image.html"><span style="display:flex;justify-content: center;"><img src="Images/ladies-dress-1.jpg" height="250px"></span></a>
+                     <a href="for-each-image.html"><span class="image-lable">tradesional dress<br>&#8377;180.00</span></a> 
+                  </div>
+                  <div class="col text-center">
+                    <a href="for-each-image.html"><span style="display:flex;justify-content: center;"><img src="Images/mens-dress-4.jpg" height="250px"></span></a>
+                    <a href="for-each-image.html"><span class="image-lable">tradesional dress<br>&#8377;180.00</span></a> 
+                  </div>
+                  <div class="col  text-center">
+                    <a href="for-each-image.html"><span style="display:flex;justify-content: center;"><img src="Images/ladies-dress-2.jpg" height="250px"></span></a>
+                     <a href="for-each-image.html"><span class="image-lable">tradesional dress<br>&#8377;180.00</span></a> 
+                  </div>
+                  <div class="col text-center">
+                   <a href="for-each-image.html"><span style="display:flex;justify-content: center;"><img src="Images/mens-dress-3.jpg" height="250px"></span></a>
+                    <a href="for-each-image.html"><span class="image-lable">tradesional dress<br>&#8377;180.00</span></a>  
+                  </div>
+                  <div class="col  text-center">
+                   <a href="for-each-image.html"><span style="display:flex;justify-content: center;"><img src="Images/ladies-dress-3.jpg" height="250px"></span></a>
+                    <a href="for-each-image.html"><span class="image-lable">tradesional dress<br>&#8377;180.00</span></a>  
+                  </div>
+                </div>
+              </div>
+              <!--recommend end-->
+     <!--footer-->
+    <div class="container-fluid bg-dark text-white">
+      <div class="container">
+      <div class="row ">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 footer pt-5">
+          <p style="font-size:20px;text-transform: uppercase;font-weight: 800;" data-aos="slide-right">company name</p>
+          <p data-aos="slide-right">Here you can use rows and<br>
+          to organize your footer content.<br>
+          Lorem ipsum dolor sit amet,<br> 
+          consectetur adipisicing elit.<br></p>
+        </div>
+        <div class="col-xl-3 pt-5 hide-girl">
+          <span style="font-size:20px;text-transform: uppercase;font-weight: 800;" data-aos="zoom-in-left">products</span><br>
+          <p style="margin-top:3%" data-aos="slide-up">M D Bootstrap</p>
+          <p style="margin-top:-3%" data-aos="slide-up">M D Bootstrap</p>
+          <p style="margin-top:-3%" data-aos="slide-up">M D Bootstrap</p>
+          <p style="margin-top:-3%;" data-aos="slide-up">M D Bootstrap</p>
+       </div>
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 footer  pt-5">
+          <span style="font-size:20px;text-transform: uppercase;font-weight: 800;" class="text-center" data-aos="zoom-in-left">useful link</span><br>
+          <p style="margin-top:3%;margin-left:1%;"data-aos="fade-up">your account</p>
+          <p style="margin-top:-3%;margin-left:1%;"data-aos="fade-up">your account</p>
+          <p style="margin-top:-3%;margin-left:1%;"data-aos="fade-up">your account</p>
+          <p style="margin-top:-3%;margin-left:1%;"data-aos="fade-up">your account</p>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12 col-12 footer pt-5 pb-3">
+          <p style="font-size:20px;text-transform: uppercase;font-weight: 800;" data-aos="slide-left">contact</p>
+          <p data-aos="fade-up"><i class="fa fa-home" aria-hidden="true" style="font-size:20px;"></i>&nbsp; New York, 10012,</p>
+          <p data-aos="fade-up"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; info@gmail.com</p>
+          <p data-aos="fade-up"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp; + 01 234 567 88</p>
+          <p data-aos="fade-up"><i class="fa fa-print" aria-hidden="true"></i>&nbsp; + 01 234 567 89</p>
+        </div>
+      </div>
+    </div>
+    <hr style="color:white;width:100%;border:1px solid">
+    <div class="container mt-4 pb-4">
+      <div class="row">
+        <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6 ">
+          <p>© 2020 Copyright:<span style="font-weight:600">MDBootstrap</span></p>
+        </div>
+        <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6 icon-head">
+          <span class="icons-2"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+          <span class="icons-3"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+          <span class="icons-1"><i class="fa fa-google-plus" aria-hidden="true"></i></span>
+          <span class="icons"><i class="fa fa-instagram" aria-hidden="true"></i></span>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!--footer-->
+    <script type="text/javascript">
+      //for single slider
+$('.single-slider').slick({
+  dots: false,
+  infinite:false,
+  autoplaySpeed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        arrows: false,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+        arrows: false
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+        arrows: false
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+}); 
+    </script>
+    <script type="text/javascript" src="Plugins\jQuery-Plugin-For-Image-Hover-Zoom-WM-Zoom\assets\js\jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="Plugins\jQuery-Plugin-For-Image-Hover-Zoom-WM-Zoom\wm-zoom\jquery.wm-zoom-1.0.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
+    <script type="text/javascript">
+      $(document).ready(function(){
+      $('.my-zoom-1').WMZoom();
+        config : {
+          inner : true
+        }
+      });
+      </script>
+       <script>
+        AOS.init({
+          once:true,
+          duration:1000,
+        });
+      </script>
+      
+    </body>
+</html>
